@@ -1,0 +1,11 @@
+<form method="post" action="plus/">
+    {% csrf_token %}
+    <input type="submit" name="plus" value="1">
+</form>
+<label>
+    {{ counter }}
+</label>
+<form method="post" action="minus/">
+    {% csrf_token %}
+    <input type="submit" name="minus" value="-1">
+</form>
