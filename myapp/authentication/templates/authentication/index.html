@@ -1,0 +1,7 @@
+<form method="POST" action="login/">
+    {% csrf_token %}
+    <input type="text" id="login" name="username" required>  
+    <input type="password" id="login" name="password" required>  
+    <input type="submit" id="login">
+</form>
+{{ authenticated }}
